@@ -53,7 +53,9 @@ int main(int argc, char* argv[])
 
         if (IsKeyPressed(KEY_LEFT))
         {
+            // Move to the previous record 
             currentRecordIdx--;
+            // To make sure the index doesnt go below 0
             if (currentRecordIdx < 0)
             {
                 currentRecordIdx = 0;
@@ -64,11 +66,15 @@ int main(int argc, char* argv[])
 
         if (IsKeyPressed(KEY_RIGHT))
         {
+            // Move to the next record
             currentRecordIdx++;
+
+            // Make sure the index doesnt go over the total number of records
             if (currentRecordIdx >= data.GetRecordCount())
             {
                 currentRecordIdx = data.GetRecordCount() -1;
             }
+            // Get new recod and load its texture
             currentRecord = data.GetRecord(currentRecordIdx);
             recordTexture = LoadTextureFromImage(currentRecord->image);
         }
