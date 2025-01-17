@@ -1,5 +1,5 @@
-# AIE Year1 Samples
+# Debugging Exercises
 
-The **RaylibStarterCpp.zip** contains a project already set up to use Raylib with all libraries and includes in place.
+Go to release and click the lastest release or click this link https://github.com/Joshua-Production/AIEYear1Samples/releases/tag/v1.0
+Once extracted open the exe to run
 
-It does **not** include GLM or any other convenience libraries, you will need to add those yourself if you want to use them.
